@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
   //   })
   // }
 
-  // Build File Path
+  // Build File Path (so that we can access the public files to be rendered)
   let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : 
   req.url); 
 
